@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins', sans-serif;
+}
+.tradingview-widget-container {
+    background-color: #120218; /* Change this to your desired background color */
+}
+/* background image */
+.container{
+    width:100%;
+    height:100vh;  
+    background-image: url(https://wazirx.com/news/wp-content/uploads/2023/07/bitcoin-digital-money-3228194.jpg);
+    background-position:center;
+    background-size:cover;
+    padding: 0 5%;
+    color:#fff    
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/subback.jpg);
+    background-size: cover;
+    background-position: center;
+    padding:10px 10%;
+    color: #ff960b;
+}
+
+.hero h3{
+    margin-top: 15%;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+.hero h1{
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.hero p{
+    margin: 10px 0 50px;
+}
+
+form{
+    background: #fff;
+    display:flex;
+    width: fit-content;
+}
+
+form input{
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    height: 70px;
+    width: 400px;
+    font-size: 16px;
+}
+
+form button{
+    background: #b810c4;
+    border:none;
+    outline: none;
+    height: 70px;
+    width: 100px;
+    cursor: pointer;
+}
+
+span{
+    color: #61b752;
+    margin-top: 10px;
+    display:block;
+
+}
+
+
+
+nav{
+    width:100%;
+    padding:20px 0;
+    display: flex;
+    align-items:center;
+}
+.logo{
+    width:50px;
+    cursor:pointer;
+}
+nav ul{
+    flex: 1;
+}
+
+nav ul li{
+    display:inline-block;
+    margin:10px 20px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+}
+nav .btn{
+    color:#fff;
+    text-decoration:none;
+    border:1px solid #fff;
+    padding:10px 30px;
+    border-radius:20px;
+}
+.content{
+    margin-top:12%;
+}
+.content h1{
+    font-size:88px;
+    margin-bottom: 15px;
+}
+.content h1 span{
+    color :#ff960b;
+}
+.content p{
+    line-height:22px;
+    font-size:14px;
+} 
+.content .btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ff960b;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:30px;
+}
+.coin-list{
+    position:absolute;
+    right:10%;
+    bottom:50px;
+    display:flex;
+    align-items:center;
+}
+.coin{
+    display:flex;
+    align-items:center;
+    font-size:14px;
+    margin:0 15px;
+    color:#ff960b;
+    border:1px solid #fff;
+    padding:20px 30px;
+    border-radius:8px;
+
+}
+.coin img{ 
+    width:40px;
+    margin-right:10px;
+}
+.coin h3{
+    color:#fff;
+    margin-bottom:5px;
+
+
+}
+.tradingview-widget-container{
+    width:100%;
+    height:100vh;  
+    
+
+}

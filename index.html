@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Investment Dashboard By TITANS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <div class ="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#subs">Subscribe</a></li>
+                <li><a href="#liveprice">Market</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <a href="#" class="btn">EN</a>
+        </nav>
+         
+        <div= class="content">
+            <h1>BUY & <br>SELL&nbsp;<span>Crypto</span> </h1>
+            <P>World's Biggest Cryptocurrency Exchange platform <br>
+                availabe on the Internet
+            </P>
+            <a href="#" class="btn">EXPLORE MORE</a>
+
+        </div>
+        <div class="coin-list">
+            <div class="coin">
+                <img src="images/bitcoin.png">
+                <div>
+                    <h3>$<span id="bitcoin"></span></h3>
+                    <p>Bitcoin</p>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="images/ethereum.png">
+                <div>
+                    <h3>$<span id="ethereum"></span></h3>
+                    <p>Ethereum</p>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="images/dogecoin.png">
+                <div>
+                    <h3>$<span id="dogecoin"></span></h3>
+                    <p>Dogecoin</p>
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+   <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+    {
+   
+    "defaultColumn": "overview",
+    "screener_type": "crypto_mkt",
+    "displayCurrency": "USD",
+    "colorTheme": "dark",
+    "locale": "in",
+    "isTransparent": true
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  
+
+  <div class="hero" id="subs">
+    <h3 style="color:white ;">coming soon!</h3>
+    <h1>SUBSCRIBE<br> for Email Updates</h1>
+    <p style="color: #f9f6f9;">Subscribe for more datails.</p>
+    <form name="submit-to-google-sheet">
+        <input type="email" name="Email" placeholder="your email id" required>
+        <button type="submit"><img src="https://as1.ftcdn.net/v2/jpg/02/93/72/48/1000_F_293724835_LqDz77Sl5zGWOU5eEcPYMM99qeBiiaiu.jpg"  height="70px" width="100px"></button>
+    </form>
+    <span id="msg"></span>
+  </div>
+  <script src="script.js"></script>
+  
+  <!-- TradingView Widget END -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby4PdWVfnIKuUkCWZuuaiTkPnkBDwjgTiOQqXpbyUtzJdRMYdUenfXYUdoVB30L87a4/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Thank You For Subscribing!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+   
+</body>
+</html> 
